@@ -1,0 +1,1518 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Connecting using "shadow-cljs" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/onake/Desktop/clojure-apps/animal-form-native ; npx shadow-cljs -d cider/cider-nrepl:0.28.5 watch :app ; popd
+; Connecting using "ClojureScript nREPL Server" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Connecting ...
+; Reading port file: file:///home/onake/Desktop/clojure-apps/animal-form-native/.nrepl-port ...
+; No nrepl port file found.
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉shadow.user꞉>  ; Use `alt+enter` to evaluate
+clj꞉shadow.user꞉> 
+; Creating cljs repl session...
+; Connecting cljs repl: ClojureScript nREPL Server...
+;   The Calva Connection Log might have more connection progress information.
+; Connected session: cljs
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.cljs'
+; Execution error (IllegalAccessError) at user/eval25366 (REPL:30).
+; print-doc does not exist
+clj꞉user꞉> 
+Success
+nil
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.59s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.64s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.67s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.74s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.80s)
+clj꞉animal-form-native.views꞉> 
+; Syntax error compiling at (src/animal_form_native/events.cljs:18:1).
+; Unable to resolve symbol: key1 in this context
+clj꞉animal-form-native.events꞉> 
+; Syntax error compiling at (src/animal_form_native/events.cljs:18:1).
+; Unable to resolve symbol: key2 in this context
+clj꞉animal-form-native.events꞉> 
+{:key1 {:key2 "mikey"}}
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.41s)
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.39s)
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.48s)
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.47s)
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:72
+; --------------------------------------------------------------------------------
+;   11 |    [:div.control
+;   12 |     [:input.input {:type "text" 
+;   13 |                    :placeholder "Text input"
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])}]]])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 14, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn select-input []
+;   17 |   [:div.field
+;   18 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:72
+; --------------------------------------------------------------------------------
+;   11 |    [:div.control
+;   12 |     [:input.input {:type "text" 
+;   13 |                    :placeholder "Text input"
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])}]]])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 14, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn select-input []
+;   17 |   [:div.field
+;   18 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:72
+; --------------------------------------------------------------------------------
+;   11 |    [:div.control
+;   12 |     [:input.input {:type "text" 
+;   13 |                    :placeholder "Text input"
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])}]]])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 14, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn select-input []
+;   17 |   [:div.field
+;   18 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:72
+; --------------------------------------------------------------------------------
+;   11 |    [:div.control
+;   12 |     [:input.input {:type "text" 
+;   13 |                    :placeholder "Text input"
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])}]]])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 14, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn select-input []
+;   17 |   [:div.field
+;   18 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:72
+; --------------------------------------------------------------------------------
+;   11 |    [:div.control
+;   12 |     [:input.input {:type "text" 
+;   13 |                    :placeholder "Text input"
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])}]]])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 14, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn select-input []
+;   17 |   [:div.field
+;   18 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:72
+; --------------------------------------------------------------------------------
+;   11 |    [:div.control
+;   12 |     [:input.input {:type "text" 
+;   13 |                    :placeholder "Text input"
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])}]]])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 14, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn select-input []
+;   17 |   [:div.field
+;   18 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:72
+; --------------------------------------------------------------------------------
+;   11 |    [:div.control
+;   12 |     [:input.input {:type "text" 
+;   13 |                    :placeholder "Text input"
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])}]]])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 14, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn select-input []
+;   17 |   [:div.field
+;   18 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:72
+; --------------------------------------------------------------------------------
+;   11 |    [:div.control
+;   12 |     [:input.input {:type "text" 
+;   13 |                    :placeholder "Text input"
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])}]]])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 14, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn select-input []
+;   17 |   [:div.field
+;   18 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:72
+; --------------------------------------------------------------------------------
+;   11 |    [:div.control
+;   12 |     [:input.input {:type "text" 
+;   13 |                    :placeholder "Text input"
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])}]]])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 14, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn select-input []
+;   17 |   [:div.field
+;   18 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:12:72
+; --------------------------------------------------------------------------------
+;    9 |   [:div.field
+;   10 |    [:label.label "Name"]
+;   11 |    [:div.control
+;   12 |     [:input.input {:on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 12, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   13 |                    :type "text" 
+;   14 |                    :placeholder "Text input"}]]])
+;   15 | 
+;   16 | (defn select-input []
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:12:72
+; --------------------------------------------------------------------------------
+;    9 |   [:div.field
+;   10 |    [:label.label "Name"]
+;   11 |    [:div.control
+;   12 |     [:input.input {:on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 12, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   13 |                    :type "text" 
+;   14 |                    :placeholder "Text input"}]]])
+;   15 | 
+;   16 | (defn select-input []
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:12:72
+; --------------------------------------------------------------------------------
+;    9 |   [:div.field
+;   10 |    [:label.label "Name"]
+;   11 |    [:div.control
+;   12 |     [:input.input {:on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 12, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   13 |                    :type "text" 
+;   14 |                    :placeholder "Text input"}]]])
+;   15 | 
+;   16 | (defn select-input []
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:12:72
+; --------------------------------------------------------------------------------
+;    9 |   [:div.field
+;   10 |    [:label.label "Name"]
+;   11 |    [:div.control
+;   12 |     [:input.input {:on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 12, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   13 |                    :type "text" 
+;   14 |                    :placeholder "Text input"}]]])
+;   15 | 
+;   16 | (defn select-input []
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:12:72
+; --------------------------------------------------------------------------------
+;    9 |   [:div.field
+;   10 |    [:label.label "Name"]
+;   11 |    [:div.control
+;   12 |     [:input.input {:on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 12, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   13 |                    :type "text" 
+;   14 |                    :placeholder "Text input"}]]])
+;   15 | 
+;   16 | (defn select-input []
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:12:73
+; --------------------------------------------------------------------------------
+;    9 |   [:div.field
+;   10 |    [:label.label "Name"]
+;   11 |    [:div.control
+;   12 |     [:input.input {:on-change #(re-frame/dispatch [::events/update-form. id (-> % .-target .-value)])
+; -------------------------------------------------------------------------------^
+; animal_form_native/views.cljs [line 12, col 73] Invalid keyword: ::events/update-form..
+; 
+; --------------------------------------------------------------------------------
+;   13 |                    :type "text" 
+;   14 |                    :placeholder "Text input"}]]])
+;   15 | 
+;   16 | (defn select-input []
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:12:72
+; --------------------------------------------------------------------------------
+;    9 |   [:div.field
+;   10 |    [:label.label "Name"]
+;   11 |    [:div.control
+;   12 |     [:input.input {:on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+; ------------------------------------------------------------------------------^-
+; animal_form_native/views.cljs [line 12, col 72] Invalid keyword: ::events/update-form.
+; 
+; --------------------------------------------------------------------------------
+;   13 |                    :type "text" 
+;   14 |                    :placeholder "Text input"}]]])
+;   15 | 
+;   16 | (defn select-input []
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:1:1
+; --------------------------------------------------------------------------------
+; 
+;    1 | (ns animal-form-native.views
+; -------^------------------------------------------------------------------------
+; null
+; Invalid namespace declaration
+; -- Syntax error -------------------
+; 
+;   (... ... (:require
+;             [re-frame.core :as re-frame]
+;             [animal-form-native.subs :as subs]
+;             [animal-form-native.events as events]))
+;            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+; 
+; has extra input
+; 
+; -- Relevant specs -------
+; 
+; :shadow.build.ns-form/ns-form:
+;   (clojure.spec.alpha/cat
+;    :ns
+;    '#{clojure.core/ns}
+;    :name
+;    clojure.core/simple-symbol?
+;    :docstring
+;    (clojure.spec.alpha/? clojure.core/string?)
+;    :meta
+;    (clojure.spec.alpha/? clojure.core/map?)
+;    :clauses
+;    :shadow.build.ns-form/ns-clauses)
+; 
+; -------------------------
+; D
+; etected 1 error
+; 
+; --------------------------------------------------------------------------------
+;    2 |   (:require
+;    3 |    [re-frame.core :as re-frame]
+;    4 |    [animal-form-native.subs :as subs]
+;    5 |    [animal-form-native.events as events]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 3 compiled, 0 warnings, 0.70s)
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:16:46
+; --------------------------------------------------------------------------------
+;   13 |     [:input.input {:value 
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+;   15 |                    :type "text" 
+;   16 |                    :placeholder "Text input"}]]])
+; ----------------------------------------------------^---------------------------
+; animal_form_native/views.cljs [line 16, col 46] The map literal starting with :value on line 13 column 19 contains 7 form(s). Map literals must contain an even number of forms.
+; 
+; --------------------------------------------------------------------------------
+;   17 | 
+;   18 | (defn select-input []
+;   19 |   [:div.field
+;   20 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:16:46
+; --------------------------------------------------------------------------------
+;   13 |     [:input.input {:value 
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+;   15 |                    :type "text" 
+;   16 |                    :placeholder "Text input"}]]])
+; ----------------------------------------------------^---------------------------
+; animal_form_native/views.cljs [line 16, col 46] The map literal starting with :value on line 13 column 19 contains 7 form(s). Map literals must contain an even number of forms.
+; 
+; --------------------------------------------------------------------------------
+;   17 | 
+;   18 | (defn select-input []
+;   19 |   [:div.field
+;   20 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:16:46
+; --------------------------------------------------------------------------------
+;   13 |     [:input.input {:value 
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+;   15 |                    :type "text" 
+;   16 |                    :placeholder "Text input"}]]])
+; ----------------------------------------------------^---------------------------
+; animal_form_native/views.cljs [line 16, col 46] The map literal starting with :value on line 13 column 19 contains 7 form(s). Map literals must contain an even number of forms.
+; 
+; --------------------------------------------------------------------------------
+;   17 | 
+;   18 | (defn select-input []
+;   19 |   [:div.field
+;   20 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:16:46
+; --------------------------------------------------------------------------------
+;   13 |     [:input.input {:value 
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+;   15 |                    :type "text" 
+;   16 |                    :placeholder "Text input"}]]])
+; ----------------------------------------------------^---------------------------
+; animal_form_native/views.cljs [line 16, col 46] The map literal starting with :value on line 13 column 19 contains 7 form(s). Map literals must contain an even number of forms.
+; 
+; --------------------------------------------------------------------------------
+;   17 | 
+;   18 | (defn select-input []
+;   19 |   [:div.field
+;   20 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:16:46
+; --------------------------------------------------------------------------------
+;   13 |     [:input.input {:value 
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+;   15 |                    :type "text" 
+;   16 |                    :placeholder "Text input"}]]])
+; ----------------------------------------------------^---------------------------
+; animal_form_native/views.cljs [line 16, col 46] The map literal starting with :value on line 13 column 19 contains 7 form(s). Map literals must contain an even number of forms.
+; 
+; --------------------------------------------------------------------------------
+;   17 | 
+;   18 | (defn select-input []
+;   19 |   [:div.field
+;   20 |    [:label.label "Subject"]
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 1 warnings, 0.71s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:13:28
+; --------------------------------------------------------------------------------
+;   10 |   [:div.field
+;   11 |    [:label.label "Name"]
+;   12 |    [:div.control
+;   13 |     [:input.input {:value @value
+; ----------------------------------^---------------------------------------------
+;  Use of undeclared Var animal-form-native.views/value
+; --------------------------------------------------------------------------------
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+;   15 |                    :type "text" 
+;   16 |                    :placeholder "Text input"}]]])
+;   17 | 
+; --------------------------------------------------------------------------------
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 1 warnings, 0.45s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:13:28
+; --------------------------------------------------------------------------------
+;   10 |   [:div.field
+;   11 |    [:label.label "Name"]
+;   12 |    [:div.control
+;   13 |     [:input.input {:value @value
+; ----------------------------------^---------------------------------------------
+;  Use of undeclared Var animal-form-native.views/value
+; --------------------------------------------------------------------------------
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+;   15 |                    :type "text" 
+;   16 |                    :placeholder "Text input"}]]])
+;   17 | 
+; --------------------------------------------------------------------------------
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 1 warnings, 0.50s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:13:28
+; --------------------------------------------------------------------------------
+;   10 |   [:div.field
+;   11 |    [:label.label "Name"]
+;   12 |    [:div.control
+;   13 |     [:input.input {:value @value
+; ----------------------------------^---------------------------------------------
+;  Use of undeclared Var animal-form-native.views/value
+; --------------------------------------------------------------------------------
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+;   15 |                    :type "text" 
+;   16 |                    :placeholder "Text input"}]]])
+;   17 | 
+; --------------------------------------------------------------------------------
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 1 warnings, 0.57s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:13:28
+; --------------------------------------------------------------------------------
+;   10 |   [:div.field
+;   11 |    [:label.label "Name"]
+;   12 |    [:div.control
+;   13 |     [:input.input {:value @value
+; ----------------------------------^---------------------------------------------
+;  Use of undeclared Var animal-form-native.views/value
+; --------------------------------------------------------------------------------
+;   14 |                    :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
+;   15 |                    :type "text" 
+;   16 |                    :placeholder "Text input"}]]])
+;   17 | 
+; --------------------------------------------------------------------------------
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.53s)
+clj꞉animal-form-native.events꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.events꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.47s)
+clj꞉animal-form-native.events꞉> 
+Success
+nil
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.48s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.38s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.41s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.48s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.56s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.43s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.55s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.36s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.36s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.56s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.37s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.45s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.30s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.58s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.39s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:31:4
+; --------------------------------------------------------------------------------
+;   28 |                  :value @value}
+;   29 |         [:option "Select dropdown"]
+;   30 |         ;; (map (fn [opt]([:option "opt"])) animal-types)]]]])
+;   31 |   )
+; ----------^---------------------------------------------------------------------
+; animal_form_native/views.cljs [line 31, col 4] Unmatched delimiter ).
+; 
+; --------------------------------------------------------------------------------
+;   32 | 
+;   33 | (defn main-panel []
+;   34 |   (let [name (re-frame/subscribe [::subs/name])]
+;   35 |     [:div.section
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 1 compiled, 0 warnings, 0.51s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.67s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.44s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.50s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.46s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.50s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.43s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.35s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.47s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.47s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.41s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.45s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.51s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.49s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.45s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.41s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 3 compiled, 0 warnings, 0.46s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 3 compiled, 0 warnings, 0.55s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.39s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.55s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.39s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 3 compiled, 0 warnings, 0.49s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 3 compiled, 0 warnings, 0.36s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.47s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 3 compiled, 0 warnings, 0.62s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 3 compiled, 0 warnings, 0.44s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.44s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.40s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.52s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.44s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.52s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.57s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.37s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.36s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.45s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.40s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.52s)
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.46s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.43s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.42s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 1 warnings, 0.40s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/subs.cljs:19:5
+; --------------------------------------------------------------------------------
+;   16 | (re-frame/reg-sub
+;   17 |  ::is-form-valid
+;   18 |  (fn [db [animal]]
+;   19 |    (every #(not (empty (-> %))) animal)))
+; -----------^--------------------------------------------------------------------
+;  Use of undeclared Var animal-form-native.subs/every
+; --------------------------------------------------------------------------------
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 1 warnings, 0.35s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/subs.cljs:19:5
+; --------------------------------------------------------------------------------
+;   16 | (re-frame/reg-sub
+;   17 |  ::is-form-valid
+;   18 |  (fn [db [animal]]
+;   19 |    (every #(not (empty (-> %))) animal)))
+; -----------^--------------------------------------------------------------------
+;  Use of undeclared Var animal-form-native.subs/every
+; --------------------------------------------------------------------------------
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.42s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.44s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.50s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.36s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.44s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.46s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.52s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.47s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.43s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 1 warnings, 0.58s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/subs.cljs:19:5
+; --------------------------------------------------------------------------------
+;   16 | (re-frame/reg-sub
+;   17 |  ::is-form-valid
+;   18 |  (fn [db [_ animal]]
+;   19 |    (every #(get-in db [:form %]) animal)))
+; -----------^--------------------------------------------------------------------
+;  Use of undeclared Var animal-form-native.subs/every
+; --------------------------------------------------------------------------------
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.51s)
+clj꞉animal-form-native.views꞉> 
+#function[re-frame.subs/reg-sub/subs-handler-fn--25865]
+clj꞉animal-form-native.subs꞉> 
+; Syntax error compiling at (src/animal_form_native/subs.cljs:24:5).
+; Unable to resolve symbol: db in this context
+clj꞉animal-form-native.subs꞉> 
+; Syntax error compiling at (src/animal_form_native/subs.cljs:24:4).
+; Unable to resolve symbol: db in this context
+clj꞉animal-form-native.subs꞉> 
+; Syntax error compiling at (src/animal_form_native/subs.cljs:24:4).
+; Unable to resolve symbol: db in this context
+clj꞉animal-form-native.subs꞉> 
+; Syntax error compiling at (src/animal_form_native/subs.cljs:24:4).
+; Unable to resolve symbol: db in this context
+clj꞉animal-form-native.subs꞉> 
+#function[re-frame.subs/reg-sub/subs-handler-fn--25865]
+clj꞉animal-form-native.subs꞉> 
+; Syntax error compiling at (src/animal_form_native/subs.cljs:25:1).
+; Unable to resolve symbol: animals in this context
+clj꞉animal-form-native.subs꞉> 
+; Syntax error compiling at (src/animal_form_native/subs.cljs:25:1).
+; Unable to resolve symbol: animals in this context
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.36s)
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.42s)
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.44s)
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:10:1
+; --------------------------------------------------------------------------------
+;    7 | 
+;    8 | (def animal-types ["Thanos" "Thor" "Hulk" "Spidey" "Captain" "IronM" "SuperM"])
+;    9 | 
+;   10 | (defn animal-list)
+; -------^------------------------------------------------------------------------
+; Syntax error macroexpanding cljs.core/defn.
+; Call to cljs.core/defn did not conform to spec.
+; -- Syntax error -------------------
+; 
+;   (animal-list)
+; 
+; should have additional elements. The next element ":fn-tail" should satisfy
+; 
+;   (clojure.spec.alpha/alt
+;    :arity-1
+;    :shadow.cljs.devtools.cljs-specs/params+body
+;    :arity-n
+;    (clojure.spec.alpha/cat
+;     :bodies
+;     (clojure.spec.alpha/+
+;      (clojure.spec.alpha/spec
+;       :shadow.cljs.devtools.cljs-specs/params+body))
+;     :attr-map
+;     (clojure.spec.alpha/? map?)))
+; 
+; -- Relevant specs -------
+; 
+; :shadow.c
+; ljs.devtools.cljs-specs/defn-args:
+;   (clojure.spec.alpha/cat
+;    :fn-name
+;    clojure.core/simple-symbol?
+;    :docstring
+;    (clojure.spec.alpha/? clojure.core/string?)
+;    :meta
+;    (clojure.spec.alpha/? clojure.core/map?)
+;    :fn-tail
+;    (clojure.spec.alpha/alt
+;     :arity-1
+;     :shadow.cljs.devtools.cljs-specs/params+body
+;     :arity-n
+;     (clojure.spec.alpha/cat
+;      :bodies
+;      (clojure.spec.alpha/+
+;       (clojure.spec.alpha/spec
+;        :shadow.cljs.devtools.cljs-specs/params+body))
+;      :attr-map
+;      (clojure.spec.alpha/? clojure.core/map?))))
+; 
+; -------------------------
+; Detected 1 error
+; 
+; --------------------------------------------------------------------------------
+;   11 | 
+;   12 | (defn text-input [id]
+;   13 |   (let [value (re-frame/subscribe [::subs/form id])]
+;   14 |     [:div.field
+; --------------------------------------------------------------------------------
+; 
+clj꞉animal-form-native.subs꞉> 
+clj꞉animal-form-native.subs꞉> 
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 1 compiled, 0 warnings, 0.40s)
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.39s)
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.35s)
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.50s)
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.50s)
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.47s)
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.44s)
+clj꞉animal-form-native.subs꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.subs꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.35s)
+clj꞉animal-form-native.subs꞉> 
+; Syntax error compiling at (src/animal_form_native/views.cljs:50:6).
+; Unable to resolve symbol: animals in this context
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.41s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.51s)
+clj꞉animal-form-native.views꞉> 
+; Syntax error compiling at (src/animal_form_native/views.cljs:50:6).
+; Unable to resolve symbol: animals in this context
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.69s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.55s)
+clj꞉animal-form-native.views꞉> 
+; Syntax error compiling at (src/animal_form_native/views.cljs:51:7).
+; Unable to resolve symbol: animals in this context
+clj꞉animal-form-native.views꞉> 
+; Syntax error compiling at (src/animal_form_native/views.cljs:51:7).
+; Unable to resolve symbol: animals in this context
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.42s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.38s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.57s)
+clj꞉animal-form-native.views꞉> 
+animals
+nil
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.39s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.37s)
+clj꞉animal-form-native.views꞉> 
+; Syntax error compiling at (src/animal_form_native/views.cljs:49:6).
+; Unable to resolve symbol: animals in this context
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.42s)
+clj꞉animal-form-native.views꞉> 
+; Syntax error compiling at (src/animal_form_native/views.cljs:49:6).
+; Unable to resolve symbol: animals-list in this context
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.40s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.56s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.51s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.50s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.50s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.40s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.52s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 1 warnings, 0.45s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:49:22
+; --------------------------------------------------------------------------------
+;   46 |                                  :on-click #((re-frame/dispatch [::events/save-form])
+;   47 |                                              ())} "Save"]
+;   48 |      
+;   49 |      [animal-listing animal-list]
+; ----------------------------^---------------------------------------------------
+;  Use of undeclared Var animal-form-native.views/animal-list
+; --------------------------------------------------------------------------------
+;   50 |      ]))
+;   51 | 
+;   52 | 
+;   53 | 
+; --------------------------------------------------------------------------------
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.47s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 2 warnings, 0.39s)
+; 
+; ------ WARNING #1 - :fn-arity --------------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:11:21
+; --------------------------------------------------------------------------------
+;    8 | (def animal-types ["Thanos" "Thor" "Hulk" "Spidey" "Captain" "IronM" "SuperM"])
+;    9 | 
+;   10 | (defn animal-listing []
+;   11 |   (let[animal-list @(re-frame/subscribe [::subs/animals]
+; ---------------------------^----------------------------------------------------
+;  Wrong number of args (3) passed to re-frame.core/subscribe
+; --------------------------------------------------------------------------------
+;   12 |                                         [:h2 "Animal List"]
+;   13 |                                         [:ul
+;   14 |                                          (map #([:li %]) animals)])]))
+;   15 | 
+; --------------------------------------------------------------------------------
+; 
+; ------ WARNING #2 - :undeclared-var --------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:58
+; --------------------------------------------------------------------------------
+;   11 |   (let[animal-list @(re-frame/subscribe [::subs/animals]
+;   12 |                                         [:h2 "Animal List"]
+;   13 |                                         [:ul
+;   14 |                                          (map #([:li %]) animals)])]))
+; ----------------------------------------------------------------^---------------
+;  Use of undeclared Var animal-form-native.views/animals
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn text-input [id]
+;   17 |   (let [value (re-frame/subscribe [::subs/form id])]
+;   18 |     [:div.field
+; --------------------------------------------------------------------------------
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 1 warnings, 0.47s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/onake/Desktop/clojure-apps/animal-form-native/src/animal_form_native/views.cljs:14:21
+; --------------------------------------------------------------------------------
+;   11 |   (let[animal-list @(re-frame/subscribe [::subs/animals])]
+;   12 |    [:h2 "Animal List"]
+;   13 |    [:ul
+;   14 |     (map #([:li %]) animals)]))
+; ---------------------------^----------------------------------------------------
+;  Use of undeclared Var animal-form-native.views/animals
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn text-input [id]
+;   17 |   (let [value (re-frame/subscribe [::subs/form id])]
+;   18 |     [:div.field
+; --------------------------------------------------------------------------------
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.37s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.45s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.48s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.50s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.62s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.42s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.44s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.52s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.49s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.43s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.49s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.45s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.37s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.57s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.45s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.56s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.47s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.38s)
+clj꞉animal-form-native.views꞉> 
+; [:app] Compiling ...
+clj꞉animal-form-native.views꞉> 
+; [:app] Build completed. (478 files, 2 compiled, 0 warnings, 0.46s)
+clj꞉animal-form-native.views꞉> 
