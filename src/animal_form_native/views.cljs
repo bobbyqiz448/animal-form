@@ -18,7 +18,7 @@
 (defn text-input [id]
   (let [value (re-frame/subscribe [::subs/form id])]
     [:div.field
-     [:label.label "Name"]
+     [:label.label "Real Name"]
      [:div.control
       [:input.input {:value @value
                      :on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
@@ -29,7 +29,7 @@
 (defn select-input [id]
   (let [value (re-frame/subscribe [::subs/form id])]
     [:div.field
-     [:label.label "Subject"]
+     [:label.label "Stage Name"]
      [:div.control
       [:div.select
        [:select {:on-change #(re-frame/dispatch [::events/update-form id (-> % .-target .-value)])
@@ -41,11 +41,11 @@
 
 (defn main-panel []
   (let [name (re-frame/subscribe [::subs/name])
-        is-form-valid? (re-frame/subscribe [::subs/is-form-valid [:animal-name :animal-type]])]
+        is-form-valid? @(re-frame/subscribe [::subs/is-form-valid [:animal-name :animal-type]])]
     [:div.section
      [text-input :animal-name]
      [select-input :animal-type]
-     [:button.button.is-primary {:disabled (not @is-form-valid?)
+     [:button.button.is-primary {:disabled (not is-form-valid?)
                                  :on-click #((re-frame/dispatch [::events/save-form])
                                              ())} "Save"]
     [animal-listing]
